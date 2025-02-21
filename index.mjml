@@ -1,0 +1,7 @@
+<mjml>
+    <mj-body>
+        <mycomponent background-color="#f0f0f0" font-size="20px" padding="20px">
+      Bonjour, ceci est mon composant !
+    </mycomponent>
+    </mj-body>
+</mjml>
