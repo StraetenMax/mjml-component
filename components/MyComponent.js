@@ -1,15 +1,22 @@
 const { BodyComponent } = require('mjml-core');
 class MyComponent extends BodyComponent{
-    static allowedAttributes={
+    static allowedAttributes = {
         'background-color': 'color',
         'font-size': 'unit(px)',
-        'padding': 'unit(px)'
+        'padding': 'unit(px)',
     };
     static defaultAttributes = {
         'background-color' : '#ffffff',
         'font-size': '16px',
-        'padding': '10px'
+        'padding': '10px',
     };
+        
+    static allowedParentTags = ['mj-body', 'mj-section', 'mj-column'];
+
+
+     getTagName(){
+        return 'mycomponent';
+    }
 
     render() {
         return this.renderMJML(`
@@ -23,4 +30,4 @@ class MyComponent extends BodyComponent{
         `);
     }
 }
-module.exports = MyComponent
+module.exports = MyComponent;
