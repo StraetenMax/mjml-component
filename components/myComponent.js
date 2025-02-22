@@ -18,7 +18,7 @@ class myComponent extends BodyComponent {
   render() {
     return `
       <div style="background-color: ${this.getAttribute('background-color')}; font-size: ${this.getAttribute('font-size')}; padding: ${this.getAttribute('padding')};">
-        Custom Component Content
+        ${this.getContent()}
       </div>
     `;
   }

@@ -1,8 +1,19 @@
 <mjml>
+  <mj-head>
+    <mj-attributes>
+      <!-- Ici, on utilise ton composant pour définir un attribut global.
+           Note : traditionnellement, <mj-attributes> sert à définir des styles par défaut pour d'autres composants.
+           Ton composant ici va injecter le HTML généré dans le head, ce qui peut être utile par exemple pour
+           ajouter du style personnalisé ou des métadonnées. -->
+      <mj-mon-composant color="blue" font-size="20px"></mj-mon-composant>
+    </mj-attributes>
+  </mj-head>
   <mj-body>
     <mj-section>
       <mj-column>
-        <mycomponent background-color="#f0f0f0" font-size="18px" padding="20px"></mycomponent>
+        <mj-text>
+          Ceci est un email d'exemple.
+        </mj-text>
       </mj-column>
     </mj-section>
   </mj-body>

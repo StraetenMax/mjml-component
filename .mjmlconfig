@@ -1,5 +1,5 @@
 {
   "packages": [
-    "./lib/myComponent.js"
+    "./components/myComponent.js"
   ]
 }
