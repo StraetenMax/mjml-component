@@ -6,12 +6,12 @@ import path from 'path'
 import fs from 'fs'
 import mjml2html from 'mjml'
 import { registerComponent } from 'mjml-core'
-import MyComponent from './components/MyComponent';
+import myComponent from './components/myComponent';
 
 //const { registerComponent } = require('mjml-core');
 //const MyComponent = require('./components/MyComponent');
 
-registerComponent(MyComponent);
+registerComponent(myComponent);
 const mjmlContent = fs.readFileSync('index.mjml', 'utf8');
 const { html, errors } = mjml2html(mjmlContent, {validationLevel: 'strict'});
 

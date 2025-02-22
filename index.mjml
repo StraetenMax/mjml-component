@@ -1,16 +1,9 @@
 <mjml>
-    <mj-head>
-        <mj-attributes>
-            <mj-class name="mycomponent" background-color="#f0f0f0" font-size="20px" padding="20px"/>
-        </mj-attributes>
-    </mj-head>
-    <mj-body>
-        <mj-section>
-            <mj-column>
-                <mycomponent>
-                    Bonjour, ceci est mon composant
-                </mycomponent>
-            </mj-column>
-        </mj-section>
-    </mj-body>
+  <mj-body>
+    <mj-section>
+      <mj-column>
+        <mycomponent background-color="#f0f0f0" font-size="18px" padding="20px"></mycomponent>
+      </mj-column>
+    </mj-section>
+  </mj-body>
 </mjml>
